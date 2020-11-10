@@ -35,11 +35,11 @@ API: https://apidocs.cheapshark.com/
 ```
 ## Wireframes
 
-Initial page: https://wireframe.cc/3oCRJM
+Initial page:
 
 <a href="https://imgur.com/7ZqCkGO"><img src="https://i.imgur.com/7ZqCkGO.png" title="source: imgur.com" /></a>
 
-Game search example: https://wireframe.cc/3oCRJM
+Game search example: 
 
 <a href="https://imgur.com/1ydlq4I"><img src="https://i.imgur.com/1ydlq4I.png" title="source: imgur.com" /></a>
 
