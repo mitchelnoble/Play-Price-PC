@@ -12,6 +12,7 @@ Play Price PC is a web application that allows users to search for digital PC ga
 
 API: https://apidocs.cheapshark.com/ 
 
+```
 [
     {
         "gameID": "189443",
@@ -31,33 +32,30 @@ API: https://apidocs.cheapshark.com/
         "internalName": "MEGAMAN1111",
         "thumb": "https://hb.imgix.net/d17ca7f3059015005f43579fb5d7a47d6510c419.jpeg?auto=compress,format&fit=crop&h=84&w=135&s=13c3c7119c658efeea9175ce07f8d517"
     },
-
+```
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+Starting page: https://wireframe.cc/3oCRJM
 
-### MVP/PostMVP
+<a href="https://imgur.com/7ZqCkGO"><img src="https://i.imgur.com/7ZqCkGO.png" title="source: imgur.com" /></a>
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+Game search example: https://wireframe.cc/3oCRJM
+
+<a href="https://imgur.com/1ydlq4I"><img src="https://i.imgur.com/1ydlq4I.png" title="source: imgur.com" /></a>
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Use external API data from CheapShark.com. 
+- Allow user to search for a game title and return results from the CheapShark API. 
+- Have clickable hyperlinks that send users to the games' corresponding online retailers.  
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- add a loading animation
+- add animations for a more sleek appearance
+- show and hide extra data such as descriptions when hovering over image thumbnails
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -80,9 +78,24 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Creating .html,.css,.js files and connecting them | H | 2hrs| | |
+| Add baseline CSS fonts and style | H | 2hrs| | |
+| Add a text input form with search button | H | 2hrs| | |
+| Create a functional Eventlistener for the search button | H | 2hrs| | |
+| Connecting API with the DOM | H | 3hrs| | |
+| Including relevant data in the search list besides price such as reviews or other retailers | L | 2hrs| | |
+| Proper CSS alignment of the Data & Content | H | 3hrs| | |
+| Add media queries and breakpoints | H | 3hrs| | |
+| Adding CSS keyframes & animations to search results | L | 3hrs| | |
+| Adding CSS keyframes & animations to search button | L | 3hrs| | |
+| Adding CSS keyframes & animations while the user scrolls down the page | L | 3hrs| | |
+| Add a sticky navigation bar to put the user back to the top of the page | L | 2hrs| | |
+| Debugging .html | H | 2hrs| | |
+| Debugging .css | H | 3hrs| | |
+| Debugging .js | H | 3hrs| | |
+| Creation of graphics and/or media such as logo and audio FX | L | 3hrs| | |
+
+| Total | H |41hrs | | |
 
 ## Code Snippet
 
