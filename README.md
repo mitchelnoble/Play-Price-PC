@@ -74,7 +74,7 @@ https://wireframe.cc/ewj9u3
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating .html,.css,.js files and connecting them | H | 2hrs| | |
+| Creating .html,.css,.js files and connecting them | H | 2hrs|5mins | |
 | Add baseline CSS fonts and style | H | 2hrs| | |
 | Add a text input form with search button | H | 2hrs| | |
 | Create a functional Eventlistener for the search button | H | 2hrs| | |
