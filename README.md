@@ -45,9 +45,8 @@ Game search example:
 
 #### MVP 
 
-- Use external API data from CheapShark.com. 
-- Allow user to search for a game title and return results from the CheapShark API. 
-- Have clickable hyperlinks that send users to the games' corresponding online retailers.  
+- Allow user to search for a game title and return its price from the CheapShark API. 
+- Have clickable hyperlinks that send users to the games' corresponding online retailers such as Steam or Amazon.  
 
 #### PostMVP  
 
@@ -59,7 +58,7 @@ Game search example:
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Nov 10| Project Approval | Incomplete
 |Nov 12| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Nov 13| Pseudocode / actual code | Incomplete
@@ -91,7 +90,6 @@ https://wireframe.cc/ewj9u3
 | Debugging .css | H | 3hrs| | |
 | Debugging .js | H | 3hrs| | |
 | Creation of graphics and/or media such as logo and audio FX | L | 3hrs| | |
-
 | Total | H |41hrs | | |
 
 ## Code Snippet
