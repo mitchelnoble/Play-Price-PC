@@ -75,8 +75,8 @@ https://wireframe.cc/ewj9u3
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Creating .html,.css,.js files and connecting them | H | 2hrs|5mins | |
-| Add baseline CSS fonts and style | H | 2hrs| | |
-| Add a text input form with search button | H | 2hrs| | |
+| Add baseline CSS fonts and style | H | 2hrs|30mins | |
+| Add a text input form with search button | H | 2hrs|30mins | |
 | Create a functional Eventlistener for the search button | H | 2hrs| | |
 | Connecting API with the DOM | H | 3hrs| | |
 | Including relevant data in the search list besides price such as reviews or other retailers | L | 2hrs| | |
