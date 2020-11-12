@@ -11,14 +11,15 @@
   <script defer src="/app.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>Play Price PC</title>
+  <link rel="icon" href="https://i.imgur.com/9sVlO1B.png?1" type="image/x-icon">
 </head>
 
 <body>
 <main>
 <h1>Play Price PC</h1>
 <h4>What game are you looking for?</h4>
-<form id="searchBar" action="/action_page.php">
-  <input type="text" class="game"><br><br>
+<form id="searchBar">
+  <input type="text" name="game" placeholder="Game title here!">
   <input type="button" onclick="getResults()" value="Search">
 </form>
 </main>

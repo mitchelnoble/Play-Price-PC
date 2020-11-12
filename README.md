@@ -89,7 +89,7 @@ https://wireframe.cc/ewj9u3
 | Debugging .html | H | 2hrs| | |
 | Debugging .css | H | 3hrs| | |
 | Debugging .js | H | 3hrs| | |
-| Creation of graphics and/or media such as logo and audio FX | L | 3hrs| | |
+| Creation of graphics and/or media such as logo and audio FX | L | 3hrs|30mins | |
 | Total | H |41hrs | | |
 
 ## Code Snippet
@@ -98,3 +98,4 @@ https://wireframe.cc/ewj9u3
 
 11/09/2020: Added: READme.md,
 11/10/2020: Created .html, .css, .js, found font styling & title icon.
+11/11/2020: Created event listeners, connected DOM to CheapShark API
