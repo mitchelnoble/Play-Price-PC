@@ -77,8 +77,8 @@ https://wireframe.cc/ewj9u3
 | Creating .html,.css,.js files and connecting them | H | 2hrs|5mins | |
 | Add baseline CSS fonts and style | H | 2hrs|30mins | |
 | Add a text input form with search button | H | 2hrs|1hr | |
-| Create a functional Eventlistener for the search button | H | 2hrs| | |
-| Connecting API with the DOM | H | 3hrs| | |
+| Create a functional Eventlistener for the search button | H | 2hrs|2hrs | |
+| Connecting API with the DOM | H | 3hrs|8hrs | |
 | Including relevant data in the search list besides price such as reviews or other retailers | L | 2hrs| | |
 | Proper CSS alignment of the Data & Content | H | 3hrs|1hr | |
 | Add media queries and breakpoints | H | 3hrs| | |
@@ -98,4 +98,4 @@ https://wireframe.cc/ewj9u3
 
 11/09/2020: Added: READme.md,
 11/10/2020: Created .html, .css, .js, found font styling & title icon.
-11/11/2020: Created event listeners, connected DOM to CheapShark API
+11/11/2020: Created event listeners, connected DOM to CheapShark API, debugging API requests
