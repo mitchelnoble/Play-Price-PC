@@ -1,3 +1,4 @@
+//select div to house the fetched data
 let dataContainer = document.querySelector('#game-data-collector');
 const getResults = async () => {
   const url = `https://www.cheapshark.com/api/1.0/games?title=${title}&limit=60&exact=0`;
@@ -10,6 +11,7 @@ const getResults = async () => {
   }
 }
 
+//take specific data from API response: thumb = game picture, external = game title, cheapest = lowest current price
 function showResGames(data) {
   console.log(data);
   let gameInfo =
@@ -19,6 +21,7 @@ function showResGames(data) {
   dataContainer.textContent("beforeend", gameInfo);
 }
 
+//connect form to js file
 const addForm = document.querySelector('#searchBar');
 
 addForm.addEventListener('submit', (event) => {
@@ -29,6 +32,7 @@ addForm.addEventListener('submit', (event) => {
   // removeResults();
 });
 
+//remove previous search results
 // removeResults = () => {
 //   while (dataContainer.lastChild) {
 //     dataContainer.removeChild(dataContainer.lastChild);
