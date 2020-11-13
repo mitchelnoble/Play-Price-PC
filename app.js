@@ -1,37 +1,52 @@
 //select div to house the fetched data
-let dataContainer = document.querySelector('#game-data-collector');
-const getResults = async () => {
+let dataContainer = document.querySelector('#game-data-container');
+console.log('data container',dataContainer)
+const getResults = async (title) => {
   const url = `https://www.cheapshark.com/api/1.0/games?title=${title}&limit=60&exact=0`;
   try {
     let response = await axios.get(url)
-    showResGames(response.data)
-    console.log(response)
+    // console.log(response.data)
+    // showResGames(response.data)
+    appendData(response.data)
   } catch (error) {
     console.log(`${error}`)
   }
 }
 
 //take specific data from API response: thumb = game picture, external = game title, cheapest = lowest current price
-function showResGames(data) {
-  console.log(data);
-  let gameInfo =
-    `<img src = ${data.thumb}></img>
-    <h1>${data.external}</h1>
-    <h3>${data.cheapest}</h3>`;
-  dataContainer.textContent("beforeend", gameInfo);
+// function showResGames(data) {
+//   console.log(data);
+//   let gameInfo =
+//     `<img src = ${data.thumb}></img>
+//     <h1>${data.external}</h1>
+//     <h3>${data.cheapest}</h3>`;
+//   dataContainer.textContent("beforeend", gameInfo);
+// }
+function appendData(data) {
+  // console.log(data.thumb)
+  data.forEach((game) => {
+    const img = document.createElement('img')
+    img.src = game.thumb
+    dataContainer.append(img)
+  })
 }
 
 //connect form to js file
 const addForm = document.querySelector('#searchBar');
-
-addForm.addEventListener('submit', (event) => {
+function formData(event) {
   event.preventDefault();
-  const inputValue = addForm.querySelector('#game').text;
+  const inputValue = addForm.querySelector('#game').value;
   console.log(inputValue)
-  // fetchData(inputValue.value)
-  // removeResults();
-});
-
+  getResults(inputValue)
+}
+addForm.addEventListener('submit', formData)
+// addForm.addEventListener('submit', (event) => {
+//   event.preventDefault();
+//   const inputValue = addForm.querySelector('#game').value;
+//   console.log(inputValue)
+//   // fetchData(inputValue.value)
+//   // removeResults();
+// });
 //remove previous search results
 // removeResults = () => {
 //   while (dataContainer.lastChild) {
