@@ -25,7 +25,13 @@ const getResults = async (title) => {
 function appendData(data) {
   // console.log(data.thumb)
   data.forEach((game) => {
-    const img = document.createElement('img')
+    let title = document.createElement('h1')
+    title = game.external
+    dataContainer.append(title)
+    let price = document.createElement('h2')
+    price = game.cheapest
+    dataContainer.append(price)
+    let img = document.createElement('img')
     img.src = game.thumb
     dataContainer.append(img)
   })
@@ -38,6 +44,7 @@ function formData(event) {
   const inputValue = addForm.querySelector('#game').value;
   console.log(inputValue)
   getResults(inputValue)
+  removeResults();
 }
 addForm.addEventListener('submit', formData)
 // addForm.addEventListener('submit', (event) => {
@@ -47,9 +54,10 @@ addForm.addEventListener('submit', formData)
 //   // fetchData(inputValue.value)
 //   // removeResults();
 // });
-//remove previous search results
-// removeResults = () => {
-//   while (dataContainer.lastChild) {
-//     dataContainer.removeChild(dataContainer.lastChild);
-//   }
-// }
+
+// remove previous search results
+removeResults = () => {
+  while (dataContainer.lastChild) {
+    dataContainer.removeChild(dataContainer.lastChild);
+  }
+}
