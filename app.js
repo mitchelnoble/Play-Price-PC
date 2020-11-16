@@ -3,7 +3,7 @@ let gotGameData;
 
 //select div to house the fetched data
 let dataContainer = document.querySelector('#game-data-container');
-console.log('data container',dataContainer)
+console.log('data container', dataContainer)
 const getResults = async (title) => {
   const url = `https://www.cheapshark.com/api/1.0/games?title=${title}&limit=60&exact=0`;
   try {
@@ -15,6 +15,7 @@ const getResults = async (title) => {
     console.log(`${error}`)
   }
 }
+
 
 //take specific data from API response: thumb = game picture, external = game title, cheapest = lowest current price
 
@@ -31,7 +32,7 @@ function appendData(data) {
     img.src = game.thumb
     img.onclick = function () {
       steamId = game.steamAppID
-      window.open(`http://store.steampowered.com/app/${steamId}/`, "_blank");        
+      window.open(`http://store.steampowered.com/app/${steamId}/`, "_blank");
     }
     dataContainer.append(img)
   })
