@@ -42,6 +42,16 @@ function appendData(data) {
   console.log(data)
 }
 
+//Function that adjusts text size of data
+
+function increaseTextSize() {
+  if (document.getElementsByTagName('h2') == true) {
+    upTextSize = document.getElementsByTagName('h2')
+    value.style.color = "red";
+  }
+}
+increaseTextSize();
+
 //connect form to js file
 const addForm = document.querySelector('#searchBar');
 function formData(event) {
