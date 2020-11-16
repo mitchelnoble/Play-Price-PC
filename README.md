@@ -86,9 +86,9 @@ https://wireframe.cc/ewj9u3
 | Adding CSS keyframes & animations to search button | L | 3hrs| | |
 | Adding CSS keyframes & animations while the user scrolls down the page | L | 3hrs| | |
 | Add a sticky navigation bar to put the user back to the top of the page | L | 2hrs| | |
-| Debugging .html | H | 2hrs| | |
-| Debugging .css | H | 3hrs| | |
-| Debugging .js | H | 3hrs| | |
+| Debugging .html | H | 2hrs|-| |
+| Debugging .css | H | 3hrs|2hrs| |
+| Debugging .js | H | 3hrs|10hrs| |
 | Creation of graphics and/or media such as logo and audio FX | L | 3hrs|30mins | |
 | Total | H |41hrs | | |
 
