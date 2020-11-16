@@ -2,6 +2,10 @@
   font-family: 'Vollkorn', 'sans';
 }
 
+h2 {
+  font-size: 30em;
+}
+
 #page-title {
   font-size: 55px;
   border: 5px #000000;
@@ -23,17 +27,25 @@ main {
   align-items: center;
 }
 
-#game-data-container {
-  margin-top: 225px;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-  width: min-content;
-  height: max-content;
-  flex-basis: auto;
+.progress-bar {
+  width: 300px;
+  height: 3em;
+  background-color: #222222;
+
 }
 
-.game-style {
-  display: flex;
+#game-data-container {
+  margin-top: 225px;
+  display: grid;
+  justify-items: center;
+  grid-auto-flow: row;
+} 
+
+.game-title {
+  font-weight: bolder;
+  font-size: 75px;
 }
+
+/* .game-style {
+  display: flex;
+} */

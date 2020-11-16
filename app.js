@@ -1,3 +1,6 @@
+let gotGameData;
+
+
 //select div to house the fetched data
 let dataContainer = document.querySelector('#game-data-container');
 console.log('data container',dataContainer)
@@ -14,27 +17,25 @@ const getResults = async (title) => {
 }
 
 //take specific data from API response: thumb = game picture, external = game title, cheapest = lowest current price
-// function showResGames(data) {
-//   console.log(data);
-//   let gameInfo =
-//     `<img src = ${data.thumb}></img>
-//     <h1>${data.external}</h1>
-//     <h3>${data.cheapest}</h3>`;
-//   dataContainer.textContent("beforeend", gameInfo);
-// }
+
 function appendData(data) {
-  // console.log(data.thumb)
+  gotGameData = data;
   data.forEach((game) => {
-    let title = document.createElement('h1')
+    let title = document.createElement('h2')
     title = game.external
     dataContainer.append(title)
-    let price = document.createElement('h2')
+    let price = document.createElement('h4')
     price = game.cheapest
     dataContainer.append(price)
     let img = document.createElement('img')
     img.src = game.thumb
+    img.onclick = function () {
+      steamId = game.steamAppID
+      window.open(window.location.href = `http://store.steampowered.com/app/${steamId}/`);        
+    }
     dataContainer.append(img)
   })
+  console.log(data)
 }
 
 //connect form to js file
@@ -45,6 +46,9 @@ function formData(event) {
   console.log(inputValue)
   getResults(inputValue)
   removeResults();
+  if (inputValue.value === 0) {
+    document.addTextContent("")
+  }
 }
 addForm.addEventListener('submit', formData)
 // addForm.addEventListener('submit', (event) => {
@@ -61,3 +65,6 @@ removeResults = () => {
     dataContainer.removeChild(dataContainer.lastChild);
   }
 }
+
+//function that displays when no results are found by the API
+

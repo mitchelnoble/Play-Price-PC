@@ -78,9 +78,9 @@ https://wireframe.cc/ewj9u3
 | Add baseline CSS fonts and style | H | 2hrs|30mins | |
 | Add a text input form with search button | H | 2hrs|1hr | |
 | Create a functional Eventlistener for the search button | H | 2hrs|2hrs | |
-| Connecting API with the DOM | H | 3hrs|8hrs | |
+| Connecting API with the DOM | H | 3hrs|10hrs | |
 | Including relevant data in the search list besides price such as reviews or other retailers | L | 2hrs| | |
-| Proper CSS alignment of the Data & Content | H | 3hrs|1hr | |
+| Proper CSS alignment of the Data & Content | H | 3hrs|8hrs | |
 | Add media queries and breakpoints | H | 3hrs| | |
 | Adding CSS keyframes & animations to search results | L | 3hrs| | |
 | Adding CSS keyframes & animations to search button | L | 3hrs| | |
