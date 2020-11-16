@@ -46,7 +46,7 @@ Game search example:
 #### MVP 
 
 - Allow user to search for a game title and return its price from the CheapShark API. 
-- Have clickable hyperlinks that send users to the games' corresponding online retailers such as Steam or Amazon.  
+- Have clickable hyperlinks that send users to the games' corresponding online retailers such as Steam.  
 
 #### PostMVP  
 
@@ -59,10 +59,10 @@ Game search example:
 |  Day | Deliverable | Status
 |---|---| ---|
 |Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Nov 10| Project Approval | Incomplete
-|Nov 12| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Nov 13| Pseudocode / actual code | Incomplete
-|Nov 16| MVP | Incomplete
+|Nov 10| Project Approval | Complete
+|Nov 12| Core Application Structure (HTML, CSS, etc.) | Complete
+|Nov 13| Pseudocode / actual code | Complete
+|Nov 16| MVP | Complete
 |Nov 17| Presentations | Incomplete
 
 ## Priority Matrix
@@ -83,11 +83,11 @@ https://wireframe.cc/ewj9u3
 | Proper CSS alignment of the Data & Content | H | 3hrs|8hrs | |
 | Add media queries and breakpoints | H | 3hrs| | |
 | Adding CSS keyframes & animations to search results | L | 3hrs| | |
-| Adding CSS keyframes & animations to search button | L | 3hrs| | |
+| Adding CSS keyframes & animations to search button | L | 3hrs|3hrs| |
 | Adding CSS keyframes & animations while the user scrolls down the page | L | 3hrs| | |
-| Add a sticky navigation bar to put the user back to the top of the page | L | 2hrs| | |
+| Add a sticky navigation bar to put the user back to the top of the page | L | 2hrs|1hr| |
 | Debugging .html | H | 2hrs|-| |
-| Debugging .css | H | 3hrs|2hrs| |
+| Debugging .css | H | 3hrs|10hrs| |
 | Debugging .js | H | 3hrs|10hrs| |
 | Creation of graphics and/or media such as logo and audio FX | L | 3hrs|30mins | |
 | Total | H |41hrs | | |

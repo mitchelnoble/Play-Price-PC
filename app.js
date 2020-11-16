@@ -1,6 +1,17 @@
 //Global Variables
 let gotGameData;
 
+//Function for loader
+let timeOut;
+
+function myFunction() {
+  timeOut = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
 
 
 //select div to house the fetched data
@@ -23,13 +34,12 @@ function appendData(data) {
   gotGameData = data;
   data.forEach((game) => {
     let title = document.createElement('h2')
-    title = game.external
+    title.textContent = game.external
+    title.style.className = "gameTitle";
     dataContainer.append(title)
-    let spaceBetween = document.createElement('p')
-    spaceBetween = ("--->")
-    dataContainer.append(spaceBetween)
     let price = document.createElement('h4')
-    price = game.cheapest
+    price.textContent = game.cheapest
+    price.style.className = "gamePrice"
     dataContainer.append(price)
     let img = document.createElement('img')
     img.src = game.thumb
