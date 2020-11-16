@@ -39,7 +39,7 @@ function appendData(data) {
     dataContainer.append(title)
     let price = document.createElement('h4')
     price.textContent = game.cheapest
-    price.style.className = "gamePrice"
+    price.style.className = "gamePrice";
     dataContainer.append(price)
     let img = document.createElement('img')
     img.src = game.thumb
