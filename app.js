@@ -31,7 +31,7 @@ function appendData(data) {
     img.src = game.thumb
     img.onclick = function () {
       steamId = game.steamAppID
-      window.open(window.location.href = `http://store.steampowered.com/app/${steamId}/`);        
+      window.open(`http://store.steampowered.com/app/${steamId}/`, "_blank");        
     }
     dataContainer.append(img)
   })
