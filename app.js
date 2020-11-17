@@ -1,7 +1,5 @@
-//Global Variables
-let gotGameData;
-
 //Function for loader
+
 let timeOut;
 
 function myFunction() {
@@ -10,11 +8,12 @@ function myFunction() {
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("loadIt").style.display = "block";
 }
 
 
 //select div to house the fetched data
+
 let dataContainer = document.querySelector('#game-data-container');
 console.log('data container', dataContainer)
 const getResults = async (title) => {
@@ -33,36 +32,34 @@ const getResults = async (title) => {
 function appendData(data) {
   gotGameData = data;
   data.forEach((game) => {
-    let title = document.createElement('h2')
-    title.textContent = game.external
+    let title = document.createElement('h2');
+    title.textContent = game.external;
     title.style.className = "gameTitle";
-    dataContainer.append(title)
-    let price = document.createElement('h4')
-    price.textContent = game.cheapest
+    title.style.textDecoration = "underline";
+    dataContainer.append(title);
+    let price = document.createElement('h4');
+    price.textContent = game.cheapest;
     price.style.className = "gamePrice";
-    dataContainer.append(price)
-    let img = document.createElement('img')
-    img.src = game.thumb
+    price.style.fontSize = "2em";
+    dataContainer.append(price);
+    let img = document.createElement('img');
+    img.src = game.thumb;
+    img.style.className = "gameImage";
+    img.style.cursor = "pointer";
     img.onclick = function () {
-      steamId = game.steamAppID
+      steamId = game.steamAppID;
       window.open(`http://store.steampowered.com/app/${steamId}/`, "_blank");
+      if (game.steamAppID === null) {
+        alert("Sorry, this version not found on Steam");
+      }
     }
-    dataContainer.append(img)
-  })
-  console.log(data)
+    dataContainer.append(img);
+  });
+  console.log(data);
 }
-
-//Function that adjusts text size of data
-
-function increaseTextSize() {
-  if (document.getElementsByTagName('h2') == true) {
-    upTextSize = document.getElementsByTagName('h2')
-    value.style.color = "red";
-  }
-}
-increaseTextSize();
 
 //connect form to js file
+
 const addForm = document.querySelector('#searchBar');
 function formData(event) {
   event.preventDefault();
@@ -76,11 +73,9 @@ addForm.addEventListener('submit', formData)
 
 
 // remove previous search results
+
 removeResults = () => {
   while (dataContainer.lastChild) {
     dataContainer.removeChild(dataContainer.lastChild);
   }
 }
-
-//function that displays when no results are found by the API
-

@@ -17,12 +17,13 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 200px;
+  border-bottom: 5px, #000000;
+  width: 100%;
+  height: auto;
   
 }
 
 #searchBar {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   text-align: center;
   display: flex;
@@ -74,7 +75,7 @@ main {
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+#loadIt {
   display: none;
   text-align: center;
 }
@@ -85,17 +86,8 @@ main {
   display: grid;
   justify-items: center;
   grid-auto-flow: dense;
-  row-gap: 4px;
+  padding: 5px;
 } 
-
-.gameTitle {
-  font-size: 15vw;
-  text-decoration-style: underline;
-}
-
-.gamePrice {
-  font-size: 15vw;
-}
 
 @media only screen and (max-width: 750px) {
   #page-title {
@@ -113,3 +105,12 @@ main {
     text-align: center;
   }
 } 
+
+@media only screen and (max-width: 310px) {
+  #game-data-container {
+    align-items: flex-start;
+  }
+  #loader {
+    margin: 17em 0 0 -75px;
+  }
+}
