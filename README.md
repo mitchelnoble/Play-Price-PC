@@ -96,6 +96,7 @@ https://wireframe.cc/ewj9u3
 
 This particular function was also my work around to adjust the styling of the API data:
 
+```
 function appendData(data) {
   gotGameData = data;
   data.forEach((game) => {
@@ -124,6 +125,7 @@ function appendData(data) {
   });
   console.log(data);
 }
+```
 
 ## Change Log
 
