@@ -63,7 +63,7 @@ Game search example:
 |Nov 12| Core Application Structure (HTML, CSS, etc.) | Complete
 |Nov 13| Pseudocode / actual code | Complete
 |Nov 16| MVP | Complete
-|Nov 17| Presentations | Incomplete
+|Nov 17| Presentations | Complete
 
 ## Priority Matrix
 https://wireframe.cc/ewj9u3
@@ -74,28 +74,64 @@ https://wireframe.cc/ewj9u3
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating .html,.css,.js files and connecting them | H | 2hrs|5mins | |
-| Add baseline CSS fonts and style | H | 2hrs|30mins | |
-| Add a text input form with search button | H | 2hrs|1hr | |
-| Create a functional Eventlistener for the search button | H | 2hrs|2hrs | |
-| Connecting API with the DOM | H | 3hrs|10hrs | |
-| Including relevant data in the search list besides price such as reviews or other retailers | L | 2hrs| | |
-| Proper CSS alignment of the Data & Content | H | 3hrs|8hrs | |
-| Add media queries and breakpoints | H | 3hrs| | |
-| Adding CSS keyframes & animations to search results | L | 3hrs| | |
-| Adding CSS keyframes & animations to search button | L | 3hrs|3hrs| |
-| Adding CSS keyframes & animations while the user scrolls down the page | L | 3hrs| | |
-| Add a sticky navigation bar to put the user back to the top of the page | L | 2hrs|1hr| |
-| Debugging .html | H | 2hrs|-| |
-| Debugging .css | H | 3hrs|10hrs| |
-| Debugging .js | H | 3hrs|10hrs| |
+| Creating .html,.css,.js files and connecting them | H | 2hrs|5mins |5mins|
+| Add baseline CSS fonts and style | H | 2hrs|1hr|1hr|
+| Add a text input form with search button | H | 2hrs|1hr |1hr|
+| Create a functional Eventlistener for the search button | H | 2hrs|2hrs|2hrs|
+| Connecting API with the DOM | H | 3hrs|10hrs|10hrs |
+| Including relevant data in the search list besides price such as reviews or other retailers | L | 2hrs|1hr|1hr|
+| Proper CSS alignment of the Data & Content | H | 3hrs|10hrs |10hrs|
+| Add media queries and breakpoints | H | 3hrs|1hr|1hr|
+| Adding CSS keyframes & animations to search results | L | 3hrs|1hr|1hr|
+| Adding CSS keyframes & animations to search button | L | 3hrs|3hrs|3hrs|
+| Adding CSS keyframes & animations while the user scrolls down the page | L | 3hrs|0|0|
+| Add a sticky navigation bar to put the user back to the top of the page | L | 2hrs|1hr|1hr|
+| Debugging .html | H | 2hrs|0|0|
+| Debugging .css | H | 3hrs|10hrs|10hrs|
+| Debugging .js | H | 3hrs|10hrs|10hrs|
 | Creation of graphics and/or media such as logo and audio FX | L | 3hrs|30mins | |
-| Total | H |41hrs | | |
+| Total | H |41hrs |51.35hrs|51.35hrs|
 
 ## Code Snippet
+
+This particular function was also my work around to adjust the styling of the API data:
+
+function appendData(data) {
+  gotGameData = data;
+  data.forEach((game) => {
+    let title = document.createElement('h2');
+    title.textContent = game.external;
+    title.style.className = "gameTitle";
+    title.style.textDecoration = "underline";
+    dataContainer.append(title);
+    let price = document.createElement('h4');
+    price.textContent = game.cheapest;
+    price.style.className = "gamePrice";
+    price.style.fontSize = "2em";
+    dataContainer.append(price);
+    let img = document.createElement('img');
+    img.src = game.thumb;
+    img.style.className = "gameImage";
+    img.style.cursor = "pointer";
+    img.onclick = function () {
+      steamId = game.steamAppID;
+      window.open(`http://store.steampowered.com/app/${steamId}/`, "_blank");
+      if (game.steamAppID === null) {
+        alert("Sorry, this version not found on Steam");
+      }
+    }
+    dataContainer.append(img);
+  });
+  console.log(data);
+}
 
 ## Change Log
 
 11/09/2020: Added: READme.md,
 11/10/2020: Created .html, .css, .js, found font styling & title icon.
-11/11/2020: Created event listeners, connected DOM to CheapShark API, debugging API requests
+11/11/2020: Created event listeners, debugging API requests
+11/12/2020: Debugging of javascript. Adjusted CSS of data
+11/13/2020: Debugged button and event listener on form, reached first MVP with help by successfully connecting DOM to API and generating request
+11/15/2020: Adjusted styling and reached both MVP's
+11/16/2020: changed progress bar to loading animation, adjusted css styling
+11/17/2020: added comments, deleted console.logs, deployed web application
