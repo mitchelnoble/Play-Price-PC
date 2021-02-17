@@ -8,7 +8,10 @@
   letter-spacing: .05em;
   text-shadow:
    4px 4px 0px #d5d5d5,
-   7px 7px 0px rgba(0, 0, 0, 0.2)
+   7px 7px 0px rgba(0, 0, 0, 0.2);
+   border: 2px solid grey;
+   padding: 0.5em;
+   border-radius: 35px;
 }
 
 main {
@@ -45,6 +48,16 @@ main {
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+}
+
+#game-data-container {
+  border: 1px solid grey;
+  border-radius: 35px;
+  padding: 2em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @-webkit-keyframes spin {
