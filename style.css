@@ -1,17 +1,18 @@
 * {
-  font-family: 'Vollkorn', 'sans';
+  font-family: 'Montserrat', 'sans';
 }
 
 #page-title {
   font-size: 75px;
-  color: #2c2c2c;
+  color: white;
   letter-spacing: .05em;
   text-shadow:
-   4px 4px 0px #d5d5d5,
+   4px 4px 0px #3a3737,
    7px 7px 0px rgba(0, 0, 0, 0.2);
    border: 2px solid grey;
    padding: 0.5em;
    border-radius: 35px;
+   background-color: black;
 }
 
 main {
@@ -19,7 +20,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 10em;
   border-bottom: 5px, #000000;
   width: 100%;
   height: auto;
