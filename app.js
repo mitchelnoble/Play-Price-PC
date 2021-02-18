@@ -1,17 +1,3 @@
-//Function for loader
-
-let timeOut;
-
-function myFunction() {
-  timeOut = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("loadIt").style.display = "block";
-}
-
-
 //select div to house the fetched data
 
 let dataContainer = document.querySelector('#game-data-container');
@@ -48,9 +34,10 @@ function appendData(data) {
     img.style.cursor = "pointer";
     img.onclick = function () {
       steamId = game.steamAppID;
-      window.open(`http://store.steampowered.com/app/${steamId}/`, "_blank");
       if (game.steamAppID === null) {
         alert("Sorry, this version not found on Steam");
+      } else {
+        window.open(`http://store.steampowered.com/app/${steamId}/`, "_blank");
       }
     }
     dataContainer.append(img);
