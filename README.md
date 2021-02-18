@@ -6,7 +6,7 @@ Play Price PC
 
 ## Project Description
 
-Play Price PC is a web application that allows users to search for digital PC games and find the lowest price of those games from online retailers such as Steam and Amazon.
+Play Price PC is a web application that allows users to search for digital PC games and find the lowest price of those games from the Steam platform.
 
 ## API and Data Sample
 
@@ -46,7 +46,7 @@ Game search example:
 #### MVP 
 
 - Allow user to search for a game title and return its price from the CheapShark API. 
-- Have clickable hyperlinks that send users to the games' corresponding online retailers such as Steam.  
+- Have clickable hyperlinks that send users to the games' Steam profile.  
 
 #### PostMVP  
 
